@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(17,24,39);
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(22,21,19);
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+
+#navbar{
+    display: flex;
+    padding: 6px;
+}
+#logoHolder a{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    align-items: center;
+}
+.absolute{
+    background-color: white;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 4px;
+}
+.absolute img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#headerH2{
+    display: inline-flex;
+    color: white;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 166.16px;
+    padding: 4px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.languageIcons{
+    display: flex;
+    flex-direction: row;
+}
+.languageIcons a{
+    text-decoration: none;
+    padding: 4px;
+}
+#contact{
+    display: inline;
+    text-decoration: none;
+    color: rgb(17,24,39);
+    border: 2px solid rgb(242, 202,44);
+    border-radius: 8px;
+    background-color: rgb(242, 202,44);
+    text-wrap: nowrap;
+}
+.relative{
+    position: relative;
+}
+#section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgs/section1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(17,24,39);
+    opacity: 0.2;
+}
+#section1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#section1Text{
+    position: absolute;
+    width: auto;
+    z-index: 1;
+    color: white;
+    top: 50%;
+    left: 10%;
+    word-break:keep-all;
+    padding: 20px;
+
+}
+
+.wrapper2{
+    min-height: 50vh;
+    max-width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17,24,39);
+    color: white              ;
+    text-align: center;
+}

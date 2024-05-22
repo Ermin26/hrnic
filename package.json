@@ -1,0 +1,19 @@
+{
+  "name": "pravnik",
+  "version": "1.0.0",
+  "description": "Advokatsko društvo Hrnić i partneri",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "Advokat.",
+    "Tužba.",
+    "Najbolji",
+    "advokati.",
+    "Najbolji",
+    "advokat."
+  ],
+  "author": "Ermin Joldić",
+  "license": "ISC"
+}

@@ -14,6 +14,7 @@ body{
     color: white;
     align-items: center;
     padding: 10px;
+    height: 70px;
 }
 
 #navbar{
@@ -72,12 +73,13 @@ body{
 }
 .relative{
     position: relative;
+    background-color: rgb(22,21,19);
 }
 #section1{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-image: url('../imgs/section1.jpg');
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -95,7 +97,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
 #section1Text{
     position: absolute;
     width: auto;
@@ -105,8 +106,15 @@ body{
     left: 10%;
     word-break:keep-all;
     padding: 20px;
-
+    background-color:transparent;
+    backdrop-filter: blur(6px);
 }
+
+#section1Text h2,p{
+    margin: 2px;
+    padding: 4px;
+}
+
 
 .wrapper2{
     min-height: 50vh;
@@ -114,7 +122,97 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(17,24,39);
     color: white              ;
     text-align: center;
+}
+.relative3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px 20px;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+}
+
+.wrapper3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.relative3 img{
+    width: 100px;
+    height: 100px;
+}
+
+.relative3 span{
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.relative3 p{
+    padding: 6px;
+}
+
+.experience,.cases,.winRate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relative4{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.relative4 h2{
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    width: 100%;
+}
+
+.card{
+    width: 20rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px gold;
+}
+
+.card-header{
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-header img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-body{
+    color: white;
 }

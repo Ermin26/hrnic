@@ -4,7 +4,7 @@
 }
 body{
     overflow-x: hidden;
-    background-color: rgb(17,24,39);
+    background-color: rgb(22,21,19);
 }
 
 #header{
@@ -191,11 +191,12 @@ body{
 }
 
 .card{
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     background-color: transparent;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 1px gold;
+    box-shadow: 0px 0px 10px 0px gold;
 }
 
 .card-header{
@@ -215,4 +216,46 @@ body{
 }
 .card-body{
     color: white;
+}
+
+.relative5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+.relative5 h2{
+    font-weight: 900;
+    color: white;
+    padding: 20px;
+}
+
+.relative5 span{
+    font-weight: 800;
+}
+#aboutUsCard{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.relative5 .card-body{
+    max-width: 400px;
+    width: 100%;
+}
+.relative5 p{
+    padding: 20px;
+}
+.relative5 img{
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 1/1;
 }

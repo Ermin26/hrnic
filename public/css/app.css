@@ -66,10 +66,10 @@ body{
     display: inline;
     text-decoration: none;
     color: rgb(17,24,39);
-    border: 2px solid rgb(242, 202,44);
     border-radius: 8px;
     background-color: rgb(242, 202,44);
     text-wrap: nowrap;
+    padding: 1px 8px;
 }
 .relative{
     position: relative;
@@ -77,8 +77,8 @@ body{
 }
 #section1{
     width: 100%;
-    height: calc(100vh - 70px);
-    background-image: url('../imgs/section1.jpg');
+    max-height: calc(100vh - 70px);
+    /*background-image: url('../imgs/section1.jpg');*/
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,7 +86,6 @@ body{
 .wrapper1{
     position: relative;
     width: 100%;
-    height: 100vh;
     background-color: rgb(17,24,39);
     opacity: 0.2;
 }
@@ -103,7 +102,8 @@ body{
     z-index: 1;
     color: white;
     top: 50%;
-    left: 10%;
+    left: 10px;
+    transform: translateY(-50%);
     word-break:keep-all;
     padding: 20px;
     background-color:transparent;
@@ -124,6 +124,8 @@ body{
     align-items: center;
     color: white              ;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .relative3{
     display: flex;
@@ -258,4 +260,166 @@ body{
     max-width: 500px;
     width: 100%;
     aspect-ratio: 1/1;
+}
+
+
+
+.relative7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #313030;
+    color: white;
+}
+
+.relative7 h2{
+    padding: 20px;
+}
+.relative7 p{
+    width: 50%;
+    text-wrap: wrap;
+    word-break: keep-all;
+    padding: 0 40px;
+}
+
+form{
+    width: 50%;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+form div{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+
+.form-control{
+    padding: 10px;
+    margin: 10px 0;
+    text-align: start;
+    background-color: #555353;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.spanName,.spanEmail, .spanMsg{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: top .7s, transform .7s;
+    pointer-events: none;
+    color: white;
+}
+
+form input:focus + span,form textarea:focus + span, input[name="name"]:not(:placeholder-shown) + span{
+    top: 5px;
+    transform: translateY(0);
+    transform: scale(.7);
+    color: white;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.form-control:focus{
+    background-color: #555353;
+    outline: none !important;
+    
+}
+button{
+    display: inline;
+    text-decoration: none;
+    color: rgb(17,24,39);
+    border-radius: 8px;
+    background-color: rgb(242, 202,44);
+    text-wrap: nowrap;
+    margin: 10px 0;
+    padding: 4px 8px;
+    border: none;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #313030;
+    padding: 10px;
+    color: white;
+}
+
+.footerLogo{
+    background-color: white;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 4px;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+.footerLogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footerH2{
+    display: inline-flex;
+    color: white;
+    font-size: 16px;
+    line-height: 1.2;
+    max-width: 120px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+#copyright{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+@media (max-width: 991px){
+    .wrapper2{
+        max-width: 100% !important;
+        padding: 20px;
+    }
+    #aboutUsCard{
+        flex-direction: column-reverse;
+    }
+    form{
+        width: 100%;
+    }
+    .relative7 p{
+        width: 100%;
+    }
+}
+@media (max-width: 552px){
+    #header{
+        width: 100%;
+        padding: 0;
+    }
+    #navbar{
+        padding: 0;
+    }
+    #contact, #languages{
+        transform: scale(.8);
+    }
+    .relative7{
+        padding: 40px 0;
+    }
 }

@@ -308,6 +308,7 @@ form div{
     margin: 10px 0;
     text-align: start;
     background-color: #555353;
+    color: white;
     outline: none !important;
     border: none !important;
     box-shadow: none !important;
@@ -321,21 +322,29 @@ form div{
     transition: top .7s, transform .7s;
     pointer-events: none;
     color: white;
+    border-radius: 6px;
 }
 
-form input:focus + span,form textarea:focus + span, input[name="name"]:not(:placeholder-shown) + span{
-    top: 5px;
+form input:focus + span,form textarea:focus + span, input:not(:placeholder-shown) + span, textarea:not(:placeholder-shown) + span{
+    top: -3px;
     transform: translateY(0);
-    transform: scale(.7);
-    color: white;
-    outline: none !important;
-    border: none !important;
+    transform: scale(.8);
+    color: rgb(201, 198, 198);
+    background-color: #555353;
+    outline: 1px solid gold !important;
+    border-radius: 6px !important;
     box-shadow: none !important;
+    padding: 2px 4px;
 }
-.form-control:focus{
+.form-control:focus {
     background-color: #555353;
     outline: none !important;
-    
+    color: white;
+    text-align: start;
+    outline: 1px solid gold !important;
+}
+.form-control:not(:focus)+ span{
+    outline: none !important;
 }
 button{
     display: inline;

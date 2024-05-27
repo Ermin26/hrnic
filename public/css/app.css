@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -110,7 +114,7 @@ body{
     backdrop-filter: blur(6px);
 }
 
-#section1Text h2,p{
+#section1Text:has(h2,p){
     margin: 2px;
     padding: 4px;
 }
@@ -262,7 +266,23 @@ body{
     aspect-ratio: 1/1;
 }
 
+.relative6{
+    max-width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+#map{
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
 
+.location{
+    padding: 16px;
+}
 
 .relative7{
     display: flex;
@@ -273,9 +293,14 @@ body{
     background-color: #313030;
     color: white;
 }
+.row{
+    width: 100%;
+    justify-content: center;
+}
 
 .relative7 h2{
     padding: 20px;
+    text-align: center;
 }
 .relative7 p{
     width: 50%;
@@ -285,7 +310,6 @@ body{
 }
 
 form{
-    width: 50%;
     padding: 40px;
     justify-content: center;
     align-items: center;
@@ -358,6 +382,46 @@ button{
     border: none;
 }
 
+.row-cols-2{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.col-4{
+    padding: 50px 0;
+    justify-content: start;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lawyers{
+    max-width: 100%;
+}
+.lawyers p{
+    display: inline-flex;
+    width: 100%;
+    padding: 0 4px;
+    margin: 0;
+    text-align: start;
+}
+.lawyers:not(:first-child){
+    margin: 22px 0;
+}
+span img, address img{
+    width: 20px;
+}
+address{
+    display: flex;
+    flex-direction: column;
+}
+address span{
+    margin: 6px 0;
+}
+address span img{
+    margin-right: 4px;
+}
 footer{
     position: relative;
     display: flex;
@@ -398,11 +462,39 @@ footer{
     bottom: 0;
     left: 0;
 }
-
-
+.error{
+    display: none;
+    flex-direction: row;
+    background-color: rgb(228, 66, 66);
+    color: white;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.success{
+    display: none;
+    flex-direction: row;
+    background-color: rgba(93, 240, 130, 0.89);
+    color: white;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 @media (max-width: 991px){
+    .relative6{
+        padding: 40px 14px;
+    }
+    .relative7{
+        padding: 40px 20px;
+    }
     .wrapper2{
         max-width: 100% !important;
         padding: 20px;
@@ -417,7 +509,35 @@ footer{
         width: 100%;
     }
 }
-@media (max-width: 552px){
+
+@media (max-width: 768px){
+    .relative6{
+        flex-direction: column-reverse;
+    }
+    .row-cols-2{
+        display: flex;
+        flex-direction: column;
+    }
+    form, .col-4{
+        width: 100% !important;
+    }
+    .col-4{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .contacts,address{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+@media (max-width: 651px){
     #header{
         width: 100%;
         padding: 0;
@@ -430,5 +550,8 @@ footer{
     }
     .relative7{
         padding: 40px 0;
+    }
+    .contacts,address{
+        margin: 0 60px;
     }
 }

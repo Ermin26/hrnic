@@ -9,6 +9,7 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript">
         (function() {
             emailjs.init("oVUprEiR8r9d177_q");
@@ -17,7 +18,7 @@
     <title>Advokatsko društvo Hrnjić i partneri</title>
 </head>
 <body>
-    <div id="main" class="flex flex-col h-full overflow-y-auto overflow-x-hidden smooth-scroll transition-all">
+    <div id="main" class="flex flex-col h-full smooth-scroll transition-all">
         <header id="header" class="container">
             <div id="navbar" class="grid items-center container">
                 <div id="logoHolder" class="col-span-2 lg:col-span-1">
@@ -35,7 +36,7 @@
 
         </header>
 
-        <section id="section1" class="relative">
+        <section data-aos="fade-up" id="section1" class="relative">
             <img src="./public/imgs/section1.jpg" alt="Background image">
             <div class="wrapper1">
             </div>
@@ -44,7 +45,7 @@
                     <p>Iskusna pravna pomoć za fizička lica i preduzeća u Žepču, Bosna i Hercegovina.</p>
                 </div>
         </section>
-        <section class="relative">
+        <section data-aos="fade-up" class="relative">
             <div class="wrapper2">
                 <h3>U advokatskoj kancelariji Hrnjić i partneri pružamo stručne pravne usluge u Žepču, Bosna i Hercegovina.
                     Naš tim iskusnih pravnika rješava širok spektar pravnih pitanja sa preciznošću i pažnjom.
@@ -53,7 +54,7 @@
                 </h3>
             </div>
         </section>
-        <section class="relative relative3">
+        <section data-aos="fade-up" class="relative relative3">
             <h2 >Izuzetno pravno vještačenje u Žepču</h2>
             <div class="wrapper3">
                 <div class="experience">
@@ -73,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative relative4">
+        <section data-aos="fade-up" class="relative relative4">
             <h2>Naš tim</h2>
             <div class="wrapper4">
                 <div class="card">
@@ -133,7 +134,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative relative5">
+        <section data-aos="fade-up" class="relative relative5">
             <h2>O nama</h2>
             <div id="aboutUsCard" class="container">
                 <div class="card-header">
@@ -149,14 +150,14 @@
                 </div>
             </div>
         </section>
-        <section class="relative relative6">
+        <section data-aos="fade-up" class="relative relative6">
             <div id="map"></div>
             <div class="location">
                 <h3>Adresa</h3>
                 <p>Prva bb, Žepče 72 230</p>
             </div>
         </section>
-        <section id="formContact" class="relative relative7">
+        <section data-aos="fade-up" id="formContact" class="relative relative7">
             <div class="row">
                 <h2>Kontaktirajte nas</h2>
                 <p>Obratite nam se sa svojim pravnim upitima.
@@ -205,7 +206,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer data-aos="fade-up">
             <div class="footerLogo"><img src="public/imgs/navlogo.png" alt="logo"></div>
             <h2 id="footerH2" class="heading-small lg:heading-medium max-w-full whitespace-normal">Advokatsko društvo Hrnjić i partneri</h2>
             <p id="copyright">&#169 Copyright 2024 Advokatsko društvo Hrnjić i partneri</p>
@@ -214,8 +215,12 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
+        AOS.init({
+            duration: 1000, // Trajanje animacije v milisekundah
+            easing: 'ease-in-out', // Easing funkcija
+        });
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('contactForm');
             const submitBtn = document.getElementById('submitBtn')

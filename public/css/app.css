@@ -272,14 +272,17 @@ body{
     display: flex;
     flex-direction: row;
     color: white;
+    justify-content: center;
 }
 #map{
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     height: 300px;
     border-radius: 10px;
 }
-
+.mapboxgl-ctrl-attrib.mapboxgl-compact{
+    background-color: transparent !important;
+}
 .location{
     padding: 16px;
 }
@@ -552,6 +555,6 @@ footer{
         padding: 40px 0;
     }
     .contacts,address{
-        margin: 0 60px;
+        margin: 0 20px;
     }
 }

@@ -15,7 +15,7 @@
             emailjs.init("oVUprEiR8r9d177_q");
         })();
     </script>
-    <title>Advokatsko društvo Hrnjić i partneri</title>
+    <title>Advokatsko društvo</title>
 </head>
 <body>
     <div id="main" class="flex flex-col h-full smooth-scroll transition-all">
@@ -24,7 +24,7 @@
                 <div id="logoHolder" class="col-span-2 lg:col-span-1">
                     <a class="flex items-center" target="_self" href="/">
                         <div class="absolute"><img src="public/imgs/navlogo.png" alt="logo"></div>
-                        <h2 id="headerH2" class="heading-small lg:heading-medium max-w-full whitespace-normal">Advokatsko društvo Hrnjić i partneri</h2>
+                        <h2 id="headerH2" class="heading-small lg:heading-medium max-w-full whitespace-normal">Advokatsko društvo Ime i partneri</h2>
                     </a>
                 </div>
             </div>
@@ -47,7 +47,7 @@
         </section>
         <section data-aos="fade-up" class="relative">
             <div class="wrapper2">
-                <h3>U advokatskoj kancelariji Hrnjić i partneri pružamo stručne pravne usluge u Žepču, Bosna i Hercegovina.
+                <h3>U advokatskoj kancelariji pružamo stručne pravne usluge u Žepču, Bosna i Hercegovina.
                     Naš tim iskusnih pravnika rješava širok spektar pravnih pitanja sa preciznošću i pažnjom.
                     Bilo da vam je potreban pravni savjet, zastupanje ili dokumentacija, mi smo tu da vam pomognemo.
                     Vjerujte nam da ćemo zaštititi vaša prava i s povjerenjem vas voditi kroz pravne izazove.
@@ -141,7 +141,7 @@
                     <img src="public/imgs/aboutUs.jpg" alt="Image cover">
                 </div>
                 <div class="card-body">
-                    <p><span>Advokatsko društvo Hrnjić i partneri</span> je opredijeljen za pružanje stručnih pravnih usluga u Žepču, Bosna i Hercegovina.
+                    <p><span>Advokatsko društvo Ime i partneri</span> je opredijeljen za pružanje stručnih pravnih usluga u Žepču, Bosna i Hercegovina.
                         Naš tim iskusnih advokata posvećen je zaštiti vaših prava i radu za povoljan ishod.
                         <br>
                         <br>
@@ -184,32 +184,32 @@
                 <div class="col-4 col-md-5">
                     <div class="contacts">
                         <div class="lawyers">
-                            <p>Advokat Dževad Hrnjić</p>
-                            <span><img src="./public/imgs/mobile.svg" alt="">+387 (0)61 143 891</span>
+                            <p>Advokat Ime Prezime</p>
+                            <span><img src="./public/imgs/mobile.svg" alt="">+387 (0)61 111 222</span>
                         </div>
 
                         <div class="lawyers">
-                            <p>Advokat Seid Hrnjić</p>
-                            <span><img src="./public/imgs/mobile.svg" alt="">+387 (0)61 611 723</span>
+                            <p>Advokat Ime Prezime</p>
+                            <span><img src="./public/imgs/mobile.svg" alt="">+387 (0)61 111 222</span>
                         </div>
 
                         <div class="lawyers">
-                            <p>Advokat Amir Krpić</p>
-                            <span><img src="./public/imgs/mobile.svg" alt="">+387 (0)66 457 954</span>
+                            <p>Advokat Ime Prezime</p>
+                            <span><img src="./public/imgs/mobile.svg" alt="">+387 (0)66 111 222</span>
                         </div>
                     </div>
                     <address>
                         <span><img src="./public/imgs/location.svg" alt="">Prva bb, Žepče 72 230</span>
-                        <span><img src="./public/imgs/phone.svg" alt="">+387 (0)32 880-143</span>
-                        <span><img src="./public/imgs/email.svg" alt="">advokatskodrustvohrnjic@gmail.com</span>
+                        <span><img src="./public/imgs/phone.svg" alt="">+387 (0)32 111 333</span>
+                        <span><img src="./public/imgs/email.svg" alt="">advokatskodrustvo@gmail.com</span>
                     </address>
                 </div>
             </div>
         </section>
         <footer data-aos="fade-up">
             <div class="footerLogo"><img src="public/imgs/navlogo.png" alt="logo"></div>
-            <h2 id="footerH2" class="heading-small lg:heading-medium max-w-full whitespace-normal">Advokatsko društvo Hrnjić i partneri</h2>
-            <p id="copyright">&#169 Copyright 2024 Advokatsko društvo Hrnjić i partneri</p>
+            <h2 id="footerH2" class="heading-small lg:heading-medium max-w-full whitespace-normal">Advokatsko društvo Ime i partneri</h2>
+            <p id="copyright">&#169 Copyright 2024 Advokatsko društvo Ime i partneri</p>
         </footer>
     </div>
 
@@ -218,8 +218,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
         AOS.init({
-            duration: 1000, // Trajanje animacije v milisekundah
-            easing: 'ease-in-out', // Easing funkcija
+            duration: 1000,
+            easing: 'ease-in-out',
         });
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('contactForm');
@@ -228,9 +228,7 @@
             const successField = document.querySelector('.success')
 
             submitBtn.addEventListener('click', function(event) {
-                event.preventDefault(); // Prepreči privzeto vedenje obrazca
-                
-                // Zberi podatke iz obrazca
+                event.preventDefault();
                 const name = form.name.value;
                 const email = form.email.value;
                 const msg = form.msg.value;
@@ -239,7 +237,6 @@
                     errorField.innerHTML = "Please fill all data fields"
                     throw Error;
                 }
-                // Preveri, ali so podatki pravilno zbrani
 
 
     // Pripravi parametre za EmailJS
@@ -258,8 +255,8 @@
                 location.reload()
             },3000);
         }, function(error) {
-            console.error('Napaka...', error);
-            alert('Prišlo je do napake pri pošiljanju sporočila.');
+            console.error('Error...', error);
+            alert("Error sending email: ", error.message);
         });
     });
 
